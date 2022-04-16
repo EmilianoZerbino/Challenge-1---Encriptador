@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Asian-Butterfly';
+    src: url('../Fonts/Asian Butterfly.otf');
+}
+
+@font-face {
+    font-family: 'Updock-Regular';
+    src: url('../Fonts/Updock-Regular.ttf');
+}
+
+/*--Cabecera---------------------------------------------------------------------*/
+
+header {
+    background-color: darkslategray;
+    width: 100%;
+    height: 7em;
+}
+
+.llave {
+    width: 7%;
+    margin: 1% 0 0 3%;
+    float: left;
+}
+
+.titulo {
+    width: 80%;
+    margin-top: 1%;
+    font: Bold 36px Updock-Regular;
+    color: rgb(192, 131, 17);
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: black 0.05em 0.05em 0.05em;
+    display: inline-block;
+}
+
+/*--Principal--------------------------------------------------------------------*/
+
+main {
+    background-color: rgb(231, 229, 252);
+    width: 90% auto;
+    height: 44em;
+    display: block;
+    padding: 1%;
+}
+
+.seccion {
+    background-color: aliceblue;
+    width: 41%;
+    margin: 2% 1% 0 3%;
+    height: auto;
+    padding: 2%;
+    display: inline-block;
+    box-shadow: black 1em 1em 1em;
+    border-radius: 2em;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0.05s;
+}
+
+.seccion:hover {
+    -webkit-transform: scale(1.05);
+}
+
+.mensaje {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+    color: rgb(23, 70, 116);
+    text-shadow: black 0.03em 0.03em 0.07em;
+}
+
+.cuadro-de-texto {
+    width: 99%;
+    height: 9em;
+    margin: 1% auto;
+    padding: 1%;
+    font-family: 'Asian-Butterfly', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+}
+
+.botonera {
+    margin: 1% auto;
+}
+
+.boton {
+    margin: 0 0 0 2.5%;
+    width: 30%;
+    height: 3em;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: black 0.03em 0.03em 0.07em;
+    border-radius: 1em;
+}
+
+.boton-1 {
+    background-color: forestgreen;
+    color: azure;
+    padding-top: -10em;
+}
+
+.boton-2 {
+    background-color: rgb(23, 70, 116);
+    color: azure;
+}
+
+.boton-3 {
+    background-color: azure;
+    color: rgb(23, 70, 116);
+}
+
+.boton-4 {
+    background-color: crimson;
+    color: azure;
+    margin: 0 0 0 70%;
+}
+
+
+/*--Pie de Página---------------------------------------------------------------*/
+
+footer {
+    background-color: darkslategray;
+    color: azure;
+    width: 100%;
+    height: 6em;
+}
+
+.autor {
+    padding: 2.2%;
+}
+
+.llave-2 {
+    width: 3%;
+    margin: 2% 1% 0 72%;
+    float: left;
+}
+
+.icono {
+    width: 15%;
+    margin: 0 0.5em -0.7em 0;
+    display: inline-block;
+}
+
+@media screen and (max-width:600px) {
+    .seccion {
+        width: 85%;
+        margin: 10% 0 0 5%;
+    }
+
+    .cuadro-de-texto {
+        font-size: 2em;
+    }
+
+    main {
+        height: 68em;
+    }
+
+    .boton {
+        margin: 0.5em;
+        padding-left:1em;
+        display: block;
+        width: 50%;
+    }
+
+    .boton-4 {
+        margin: 0;
+    }
+
+    .icono {
+        display: block;
+    }
+
+    .llave {
+        margin: 2em 0.5em 0;
+    }
+
+    .llave-2 {
+        margin: 1em 0.5em 0;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
